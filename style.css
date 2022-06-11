@@ -20,8 +20,8 @@ body{
     justify-content: center;
 }
 .container-cards{
-    width: 90%;
-    height: 80%;
+    width: 340px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     margin: 80px 0;
@@ -92,4 +92,36 @@ body{
 }
 .card-luxury a {
     color: var(--veryDarkCyan);
+}
+
+a:hover{
+    border: 2px solid var(--veryLightGray);
+    color: var(--veryLightGray);
+    background-color: inherit;
+}
+
+@media (min-width: 1200px){
+    body{
+        height: 100vh;
+    }
+    .container-cards{
+        width: 900px;
+        height: 500px;
+        flex-direction: row;
+        place-self: center;
+    }
+    .card-sedans{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+    }
+    .card-luxury{
+        border-top-right-radius: 12px;;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 0px;
+    }
+    a{
+        position: absolute;
+        bottom: 200px;
+    }
 }
