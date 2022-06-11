@@ -1,0 +1,95 @@
+:root{
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Display';
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-cards{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+}
+.container-cards section{
+    width: 100%;
+    height: auto;
+    padding: 60px 40px;
+    padding-top: 50px;
+}
+.container-cards span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-cards h1{
+    color: var(--veryLightGray);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Big Shoulders Display';
+    font-size: 34px;
+}
+.container-cards p{
+    color: var(--veryLightGray);
+    margin-right: 40px;
+    line-height: 1.5;
+    margin-bottom: 44px;
+    font-size: 14px;
+}
+.container-cards a{
+    text-decoration: none;
+    background-color: var(--veryLightGray);
+    border-radius: 30px;
+    padding: 14px 28px;
+    margin-bottom: 80px;
+}
+.card-sedans{
+    background-color: var(--brightOrange);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card-sedans span{
+    background-image: url('./images/icon-sedans.svg');
+}
+.card-sedans a{
+    color: var(--brightOrange);
+}
+.card-suvs{
+    background-color: var(--darkCyan);
+}
+.card-suvs span{
+    background-image: url('./images/icon-suvs.svg');
+}
+.card-suvs a {
+    color: var(--darkCyan);
+}
+.card-luxury{
+    background-color: var(--veryDarkCyan);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.card-luxury span{
+    background-image: url('./images/icon-luxury.svg');
+}
+.card-luxury a {
+    color: var(--veryDarkCyan);
+}
